@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+
+
+<header>
+<div class="container">	
+	<h2>Spam Detector</h2>	
+</div>
+</header>
+	
+
+{% if prediction == 1%}
+<h2 style="color:rgb(199, 4, 4);">Spam</h2>
+{% elif prediction == 0%}
+<h2 style="color:rgb(0, 0, 117);">Not Spam</h2>
+{% endif %}
+
+</div>
+
+
+</body>
+</html>
